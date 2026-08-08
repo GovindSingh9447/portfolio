@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta name="description" content="Govind Singh — software engineer building infrastructure, DevOps tooling, and product interfaces."/>
+  <meta name="theme-color" content="#eef2ef"/>
+  <title>Govind Singh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to work</a>
+
+  <header class="top">
+    <a class="top-brand" href="#top" aria-label="Govind Singh home">GS</a>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-copy">
+        <p class="brand">Govind Singh</p>
+        <h1>Infrastructure that feels like product.</h1>
+        <p class="lede">I design and ship DevOps tooling, cloud systems, and calm operator interfaces for real production hosts.</p>
+        <div class="cta">
+          <a class="btn primary" href="#work">See selected work</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img src="assets/hero.jpg" alt="" width="1600" height="900" decoding="async" fetchpriority="high"/>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <p>Tools and systems built for operators who live in the terminal and the browser.</p>
+      </div>
+
+      <article class="project">
+        <div class="project-copy">
+          <p class="eyebrow">Open packages · Go</p>
+          <h3>Docker Log Viewer</h3>
+          <p>
+            A lightweight control plane for live container logs, compose stacks, RBAC,
+            and multi-host standalone / agent mode — installable via apt and dnf.
+          </p>
+          <div class="project-links">
+            <a href="https://govindsingh9447.github.io/docker-log-viewer-packages/" target="_blank" rel="noopener">Packages site</a>
+            <a href="https://github.com/GovindSingh9447/docker-log-viewer" target="_blank" rel="noopener">Source</a>
+          </div>
+        </div>
+        <a class="project-media" href="https://govindsingh9447.github.io/docker-log-viewer-packages/" target="_blank" rel="noopener">
+          <img src="assets/project-dlv.png" alt="Docker Log Viewer interface preview" width="1200" height="750" loading="lazy"/>
+        </a>
+      </article>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <div>
+          <h2>About</h2>
+          <p>
+            I’m a software engineer focused on reliable delivery: Linux hosts, containers,
+            automation, and the small sharp UIs that make day-two operations less painful.
+          </p>
+          <p>
+            Recent work spans Docker tooling, packaging (deb/rpm), CI releases, and multi-server
+            agent architectures for private infrastructure.
+          </p>
+          <ul class="skills" aria-label="Focus areas">
+            <li>Go &amp; Linux services</li>
+            <li>Docker / Compose</li>
+            <li>CI/CD &amp; packaging</li>
+            <li>Cloud &amp; DevOps</li>
+          </ul>
+        </div>
+        <figure class="portrait">
+          <img src="assets/portrait.png" alt="Portrait of Govind Singh" width="400" height="400" loading="lazy"/>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Open to thoughtful collaborations, infrastructure tools, and product engineering roles.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn primary" href="mailto:hello@example.com">Email</a>
+        <a class="btn" href="https://github.com/GovindSingh9447" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="fine">Replace the email and LinkedIn URLs in <code>index.html</code> with your real ones.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© <span id="y"></span> Govind Singh</span>
+    <a href="https://github.com/GovindSingh9447" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
