@@ -60,11 +60,12 @@ a:hover { color: #0b5b55; }
 .top.is-scrolled { border-bottom-color: var(--line); }
 .top-brand {
   font-family: var(--display);
-  font-weight: 600;
-  font-size: 1.05rem;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+  letter-spacing: -0.03em;
   color: var(--ink);
   text-decoration: none;
+  white-space: nowrap;
 }
 .top-nav {
   display: flex;
@@ -77,6 +78,20 @@ a:hover { color: #0b5b55; }
   font-weight: 500;
 }
 .top-nav a:hover { color: var(--ink); }
+
+@media (max-width: 640px) {
+  .top {
+    flex-wrap: wrap;
+    row-gap: 0.45rem;
+  }
+  .top-brand {
+    font-size: 1rem;
+  }
+  .top-nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
 
 .hero {
   width: min(100%, var(--max));
