@@ -205,6 +205,7 @@ a:hover { color: #0b5b55; }
   background: var(--panel);
   backdrop-filter: blur(8px);
 }
+.project + .project { margin-top: 1.25rem; }
 .eyebrow {
   margin: 0 0 0.45rem;
   font-size: 0.78rem;
