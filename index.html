@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-  <meta name="description" content="Govind Singh — software engineer building infrastructure, DevOps tooling, and product interfaces."/>
+  <meta name="description" content="Govind Singh — Cloud DevOps Engineer in Bengaluru. AWS, Kubernetes, CI/CD, observability, and production tooling."/>
   <meta name="theme-color" content="#eef2ef"/>
-  <title>Govind Singh</title>
+  <title>Govind Singh — Cloud DevOps Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"/>
@@ -18,6 +18,7 @@
     <a class="top-brand" href="#top" aria-label="Govind Singh home">GS</a>
     <nav class="top-nav" aria-label="Primary">
       <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -27,8 +28,12 @@
     <section class="hero" aria-label="Introduction">
       <div class="hero-copy">
         <p class="brand">Govind Singh</p>
-        <h1>Infrastructure that feels like product.</h1>
-        <p class="lede">I design and ship DevOps tooling, cloud systems, and calm operator interfaces for real production hosts.</p>
+        <h1>Cloud DevOps for regulated, high-availability systems.</h1>
+        <p class="lede">
+          4.7+ years designing, debugging, and running AWS and Kubernetes platforms —
+          with a focus on monitoring tools, secure delivery, and calm operator experiences.
+        </p>
+        <p class="place">Bengaluru, India</p>
         <div class="cta">
           <a class="btn primary" href="#work">See selected work</a>
           <a class="btn" href="#contact">Get in touch</a>
@@ -42,12 +47,12 @@
     <section class="section" id="work">
       <div class="section-head">
         <h2>Selected work</h2>
-        <p>Tools and systems built for operators who live in the terminal and the browser.</p>
+        <p>Tools and libraries built for operators and learners in the DevOps space.</p>
       </div>
 
       <article class="project">
         <div class="project-copy">
-          <p class="eyebrow">Open packages · Go</p>
+          <p class="eyebrow">Packages · Go</p>
           <h3>Docker Log Viewer</h3>
           <p>
             A lightweight control plane for live container logs, compose stacks, RBAC,
@@ -68,7 +73,7 @@
           <h3>DevOps Notes</h3>
           <p>
             A searchable notes library for DevOps guides — browse by category, star favorites,
-            resume reading, and keep progress on-device for quick offline-friendly access.
+            resume reading, and keep progress on-device for quick access.
           </p>
           <div class="project-links">
             <a href="https://govindsingh9447.github.io/devops-notes-website/" target="_blank" rel="noopener">Open library</a>
@@ -80,23 +85,83 @@
       </article>
     </section>
 
+    <section class="section" id="experience">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Cloud DevOps Engineer at Decimal Technologies, Gurugram — Feb 2022 to present.</p>
+      </div>
+
+      <div class="exp-list">
+        <article class="exp">
+          <h3>Kotak Mahindra Bank</h3>
+          <p class="exp-meta">HA Kubernetes · Terraform · AWS · EFK · Datadog</p>
+          <ul>
+            <li>Designed HA Kubernetes clusters and production servers for financial compliance and security standards.</li>
+            <li>Automated infrastructure with Terraform (remote state, locking) and blue/green releases via CodeDeploy on EC2, EKS, and RDS.</li>
+            <li>Centralized logging with Fluentd, Elasticsearch, and Kibana; APM and alerting with Datadog.</li>
+            <li>Hardened transit and rest security (ALB SSL, KMS, Secrets Manager) and cleared VAPT findings.</li>
+          </ul>
+        </article>
+
+        <article class="exp">
+          <h3>DBS Bank</h3>
+          <p class="exp-meta">EKS · Karpenter · Jenkins · Prometheus · Grafana</p>
+          <ul>
+            <li>Hardened Kubernetes node-group images to compliance guidelines and introduced Karpenter node pools on EKS.</li>
+            <li>Built Jenkins shell automation for runbooks: backup, rollback, archive, and server lifecycle tasks.</li>
+            <li>Applied HPA with Prometheus/Grafana monitoring and cross-account S3 transfers via AWS DataSync.</li>
+          </ul>
+        </article>
+
+        <article class="exp">
+          <h3>Canara Bank</h3>
+          <p class="exp-meta">BFSI multi-environment · IAM · KMS · Python</p>
+          <ul>
+            <li>Ran multi-environment release management across digitized BFSI workloads on cloud and on-prem.</li>
+            <li>Configured IAM, SSL, and KMS patterns; designed Prometheus/Grafana monitoring for incident response.</li>
+            <li>Wrote Python utilities for validation, configuration management, and deployment orchestration.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
     <section class="section about" id="about">
       <div class="about-grid">
         <div>
           <h2>About</h2>
           <p>
-            I’m a software engineer focused on reliable delivery: Linux hosts, containers,
-            automation, and the small sharp UIs that make day-two operations less painful.
+            I’m a Cloud DevOps Engineer who thrives in fast-paced environments — strong on design,
+            root-cause analysis, and application management. My focus is building and maintaining
+            monitoring tools and cloud solutions that stay reliable under real production load.
           </p>
           <p>
-            Recent work spans Docker tooling, packaging (deb/rpm), CI releases, and multi-server
-            agent architectures for private infrastructure.
+            Stack highlights include AWS, Kubernetes, Jenkins/Argo CD/Azure DevOps, Docker,
+            Terraform, Ansible, Prometheus/Grafana, and the EFK/ELK ecosystem — plus Python automation with Boto3.
           </p>
-          <ul class="skills" aria-label="Focus areas">
-            <li>Go &amp; Linux services</li>
-            <li>Docker / Compose</li>
-            <li>CI/CD &amp; packaging</li>
-            <li>Cloud &amp; DevOps</li>
+
+          <h3 class="subhead">Core competencies</h3>
+          <ul class="skills" aria-label="Core competencies">
+            <li>Cloud architecture design</li>
+            <li>CI/CD integration &amp; release management</li>
+            <li>Security implementation &amp; hardening</li>
+            <li>Observability, monitoring &amp; incident response</li>
+            <li>Disaster recovery &amp; cost optimization</li>
+          </ul>
+
+          <h3 class="subhead">Education &amp; certification</h3>
+          <ul class="edu">
+            <li>
+              <strong>MCA — AI/ML Engineering</strong><br/>
+              Vellore Institute of Technology, Tamil Nadu
+            </li>
+            <li>
+              <strong>BCA — Software Engineering</strong><br/>
+              Guru Gobind Singh Indraprastha University, Delhi · 2019–2022 · 84.5%
+            </li>
+            <li>
+              <strong>Certified Kubernetes Administrator (CKA)</strong><br/>
+              The Linux Foundation · 2026
+            </li>
           </ul>
         </div>
         <figure class="portrait">
@@ -108,20 +173,27 @@
     <section class="section contact" id="contact">
       <div class="section-head">
         <h2>Contact</h2>
-        <p>Open to thoughtful collaborations, infrastructure tools, and product engineering roles.</p>
+        <p>Based in Bengaluru — open to DevOps, platform, and cloud engineering conversations.</p>
       </div>
+      <ul class="contact-meta">
+        <li><a href="mailto:govindkrsingh0605@gmail.com">govindkrsingh0605@gmail.com</a></li>
+        <li><a href="tel:+919608954724">+91 96089 54724</a></li>
+        <li>Bengaluru, India</li>
+      </ul>
       <div class="contact-actions">
-        <a class="btn primary" href="https://github.com/GovindSingh9447" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="mailto:govind@example.com">Email</a>
+        <a class="btn primary" href="mailto:govindkrsingh0605@gmail.com">Email</a>
+        <a class="btn" href="https://github.com/GovindSingh9447" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://www.linkedin.com/in/govindsingh9447" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-      <p class="fine">Update the email and LinkedIn URLs in <code>index.html</code> if needed.</p>
     </section>
   </main>
 
   <footer class="foot">
-    <span>© <span id="y"></span> Govind Singh</span>
-    <a href="https://github.com/GovindSingh9447" target="_blank" rel="noopener">GitHub</a>
+    <span>© <span id="y"></span> Govind Singh · Bengaluru</span>
+    <span class="foot-links">
+      <a href="https://github.com/GovindSingh9447" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/govindsingh9447" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
   </footer>
 
   <script src="js/main.js"></script>

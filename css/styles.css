@@ -114,6 +114,12 @@ a:hover { color: #0b5b55; }
   color: var(--muted);
   font-size: clamp(1rem, 2.2vw, 1.12rem);
 }
+.place {
+  margin: 0.85rem 0 0;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--ink);
+}
 .cta {
   display: flex;
   flex-wrap: wrap;
@@ -256,9 +262,16 @@ a:hover { color: #0b5b55; }
   gap: 2rem;
 }
 .about p + p { margin-top: 0.9rem; }
+.subhead {
+  margin: 1.75rem 0 0.65rem;
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
 .skills {
   list-style: none;
-  margin: 1.4rem 0 0;
+  margin: 0.4rem 0 0;
   padding: 0;
   display: grid;
   gap: 0.45rem;
@@ -268,6 +281,64 @@ a:hover { color: #0b5b55; }
   border-bottom: 1px solid var(--line);
   font-weight: 500;
 }
+.edu {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.edu strong { color: var(--ink); font-weight: 600; }
+
+.exp-list {
+  display: grid;
+  gap: 1.15rem;
+}
+.exp {
+  padding: clamp(1.1rem, 3vw, 1.35rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+.exp h3 {
+  margin: 0 0 0.25rem;
+  font-family: var(--display);
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+.exp-meta {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.exp ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.exp li { margin: 0.35rem 0; }
+
+.contact-meta {
+  list-style: none;
+  margin: 0 0 1.15rem;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+.contact-meta a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 500;
+}
+.contact-meta a:hover { color: var(--accent); }
+
+.foot-links { display: flex; gap: 1rem; }
 .portrait {
   margin: 0;
   border-radius: var(--radius);
