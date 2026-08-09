@@ -2,35 +2,32 @@
   const year = document.getElementById("y");
   if (year) year.textContent = String(new Date().getFullYear());
 
-  const bar = document.getElementById("progress");
-  const nav = document.querySelector(".nav");
-  const onScroll = () => {
-    const max = document.documentElement.scrollHeight - window.innerHeight;
-    const p = max > 0 ? (window.scrollY / max) * 100 : 0;
-    if (bar) bar.style.width = `${p}%`;
-    if (nav) nav.classList.toggle("is-scrolled", window.scrollY > 12);
-  };
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
+  const top = document.querySelector(".top");
+  if (top) {
+    const onScroll = () => {
+      top.classList.toggle("is-scrolled", window.scrollY > 8);
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  }
 
-  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const nodes = document.querySelectorAll(".feature, .exp article, .about-grid, .contact");
-  if (!reduce && "IntersectionObserver" in window) {
+  // Reveal sections gently when they enter view
+  const nodes = document.querySelectorAll(".section, .project");
+  if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(
       (entries) => {
-        for (const e of entries) {
-          if (!e.isIntersecting) continue;
-          e.target.classList.add("in");
-          io.unobserve(e.target);
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            io.unobserve(entry.target);
+          }
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+      { threshold: 0.12 }
     );
     nodes.forEach((n) => {
-      n.classList.add("reveal");
+      n.classList.add("will-reveal");
       io.observe(n);
     });
-  } else {
-    nodes.forEach((n) => n.classList.add("in"));
   }
 })();
