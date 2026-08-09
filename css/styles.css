@@ -51,6 +51,8 @@ a:hover { color: #0b5b55; }
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  width: min(100%, var(--max));
+  margin: 0 auto;
   padding: 0.85rem var(--pad);
   backdrop-filter: blur(12px);
   background: color-mix(in srgb, var(--bg) 78%, transparent);
