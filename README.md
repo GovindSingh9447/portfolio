@@ -2,6 +2,8 @@
 
 Modern personal site for selected work, about, and contact.
 
+**Live:** https://govindsingh9447.github.io/portfolio/
+
 ## Local preview
 
 ```bash
@@ -17,14 +19,3 @@ Edit `index.html`:
 - Email / LinkedIn links in **Contact**
 - Add more projects under **Selected work**
 - Replace `assets/portrait.png` if you want a different photo
-
-## Create GitHub repo & push
-
-```bash
-cd ~/Govind/portfolio
-git remote add origin git@github.com:GovindSingh9447/portfolio.git
-git push -u origin main
-```
-
-Then enable **Settings → Pages** → Deploy from branch `main` / `/` (root),
-or use GitHub Actions later.
