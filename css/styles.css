@@ -8,8 +8,8 @@
   --accent-ink: #f3fffb;
   --panel: rgba(255, 255, 255, 0.62);
   --radius: 18px;
-  --pad: clamp(1rem, 2.5vw, 1.75rem);
-  --max: 96rem;
+  --pad: clamp(1rem, 2vw, 1.5rem);
+  --max: 100%;
   --font: "Outfit", sans-serif;
   --display: "Fraunces", Georgia, serif;
   --safe-b: env(safe-area-inset-bottom, 0px);
@@ -51,8 +51,8 @@ a:hover { color: #0b5b55; }
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  width: min(100%, var(--max));
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 0.85rem var(--pad);
   backdrop-filter: blur(12px);
   background: color-mix(in srgb, var(--bg) 78%, transparent);
@@ -412,8 +412,8 @@ a:hover { color: #0b5b55; }
 }
 
 .foot {
-  width: min(100%, var(--max));
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding: 1.25rem var(--pad) calc(1.75rem + var(--safe-b));
   display: flex;
   justify-content: space-between;
